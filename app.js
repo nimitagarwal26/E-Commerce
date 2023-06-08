@@ -4,8 +4,8 @@ const menuItems = document.querySelectorAll(".menuItem")
 const products = [
     {
       id: 1,
-      title: "Air Force",
-      price: 119,
+      title: "AIR FORCE",
+      price: 9999,
       colors: [
         {
           code: "black",
@@ -19,8 +19,8 @@ const products = [
     },
     {
       id: 2,
-      title: "Air Jordan",
-      price: 149,
+      title: "AIR JORDAN",
+      price: 14999,
       colors: [
         {
           code: "lightgray",
@@ -34,8 +34,8 @@ const products = [
     },
     {
       id: 3,
-      title: "Blazer",
-      price: 109,
+      title: "BLAZER",
+      price: 7999,
       colors: [
         {
           code: "lightgray",
@@ -49,8 +49,8 @@ const products = [
     },
     {
       id: 4,
-      title: "Crater",
-      price: 129,
+      title: "CRATER",
+      price: 9999,
       colors: [
         {
           code: "black",
@@ -64,8 +64,8 @@ const products = [
     },
     {
       id: 5,
-      title: "Hippie",
-      price: 99,
+      title: "HIPPIE",
+      price: 10999,
       colors: [
         {
           code: "gray",
@@ -81,10 +81,23 @@ const products = [
 
   let choosenProduct = products[0]
 
+  const currentProductImg = document.querySelector(".productImg");
+  const currentProductTitle = document.querySelector(".productTitle");
+  const currentProductPrice = document.querySelector(".productPrice");
+  const currentProductColors = document.querySelectorAll(".color");
+  const currentProductSizes = document.querySelectorAll(".size");
+
 menuItems.forEach((item,index)=>{
     item.addEventListener("click",()=>{
+        
         //change the current slide
         wrapper.style.transform=`translateX(${-100*index}vw)`;
+        
         //change the chosen product
+        choosenProduct = products[index]
+
+        //change texts of currentProduct
+        currentProductTitle.textContent = choosenProduct.title
+        currentProductPrice.textContent = "₹" + choosenProduct.price
     });
 });
