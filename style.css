@@ -253,4 +253,14 @@ nav{
 .productButton{
     float: right;
     padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.productButton:hover{
+    background-color: white;
+    color: black;
 }
