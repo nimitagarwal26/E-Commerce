@@ -99,5 +99,9 @@ menuItems.forEach((item,index)=>{
         //change texts of currentProduct
         currentProductTitle.textContent = choosenProduct.title
         currentProductPrice.textContent = "₹" + choosenProduct.price
+        currentProductImg.src = choosenProduct.colors[0].img
+        currentProductColors.forEach((color,index)=>{
+          color.style.backgroundColor=choosenProduct.colors[index].code;
+        });
     });
 });
