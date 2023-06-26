@@ -225,8 +225,27 @@ nav{
     box-shadow: 4px 5px 22px -4px rgba(0,0,0,0.68);
     -webkit-box-shadow: 4px 5px 22px -4px rgba(0,0,0,0.68);
     -moz-box-shadow: 4px 5px 22px -4px rgba(0,0,0,0.68);
+}
 
-    
+.payTitle{
+    font-size: 35px;
+    color: gray;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.payInput{
+padding: 10px;
+margin: 10px 0px;
+border: none;
+border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder{
+    color: rgb(184, 184, 184);
 }
 
 .productDetails{
