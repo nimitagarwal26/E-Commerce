@@ -209,6 +209,26 @@ nav{
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
 }
 
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 5px 22px -4px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 4px 5px 22px -4px rgba(0,0,0,0.68);
+    -moz-box-shadow: 4px 5px 22px -4px rgba(0,0,0,0.68);
+
+    
+}
+
 .productDetails{
     position: absolute;
     top: 10%;
